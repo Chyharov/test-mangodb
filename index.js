@@ -2,7 +2,6 @@ const { connect } = require("mongoose");
 const express = require("express");
 
 const { mongoURL } = require("./config");
-
 const app = express();
 
 app.get("/", (req, res, next) => {
