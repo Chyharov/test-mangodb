@@ -1,7 +1,6 @@
 const { connect } = require("mongoose");
 
-const mongoURL =
-  "mongodb+srv://superUser:superrestart@cluster0.lr0b3of.mongodb.net/?retryWrites=true&w=majority";
+const { mongoURL } = require("./config");
 
 connect(mongoURL, { dbName: "database" })
   .then(() => console.log("MangoDB connected"))
